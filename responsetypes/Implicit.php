@@ -67,7 +67,6 @@ class Implicit extends BaseModel
             ['response_type', 'required', 'requiredValue' => 'token'],
             [['client_id'], 'string', 'max' => 80],
             [['state'], 'string', 'max' => 255],
-            [['redirect_uri'], 'url'],
             [['client_id'], 'validateClient_id'],
             [['redirect_uri'], 'validateRedirect_uri'],
             [['scope'], 'validateScope'],
