@@ -46,7 +46,6 @@ class AuthorizationCode extends ActiveRecord
             [['scope'], 'string'],
             [['authorization_code'], 'string', 'max' => 40],
             [['client_id'], 'string', 'max' => 80],
-            [['redirect_uri'], 'url'],
         ];
     }
 

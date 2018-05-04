@@ -56,7 +56,6 @@ class Authorization extends BaseModel
             ['response_type', 'required', 'requiredValue' => 'code'],
             [['client_id'], 'string', 'max' => 80],
             [['state'], 'string', 'max' => 255],
-            [['redirect_uri'], 'url'],
             [['client_id'], 'validateClientId'],
             [['redirect_uri'], 'validateRedirectUri'],
             [['scope'], 'validateScope'],

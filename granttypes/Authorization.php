@@ -64,7 +64,6 @@ class Authorization extends BaseModel
             [['client_id', 'grant_type', 'code'], 'required'],
             [['client_id'], 'string', 'max' => 80],
             [['code'], 'string', 'max' => 40],
-            [['redirect_uri'], 'url'],
             [['client_id'], 'validateClientId'],
             [['code'], 'validateCode'],
             [['redirect_uri'], 'validateRedirectUri'],
